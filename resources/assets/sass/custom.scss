@@ -1,0 +1,84 @@
+body{
+}
+
+[v-cloak] { display:none; }
+
+#app{
+	
+	min-height:100vh;
+
+	// background: url('/images/hero-bg2.jpg') no-repeat center center fixed; 
+	//   -webkit-background-size: cover;
+	//   -moz-background-size: cover;
+	//   -o-background-size: cover;
+	//   background-size: cover;
+
+
+}
+
+
+.logo-img{
+	// margin-top: 50px;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+.logo-text{
+	font-size: 2em;
+    color: #6ea8bf;
+    font-weight: 900;
+    margin-left: -30px;
+    padding-top: 15px;
+}
+
+.hero{
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+	margin-top:50px;
+	background:rgba(255, 255, 255, 0);
+	margin-right:20px;
+}
+
+.hero-form{	
+	padding:20px;
+	border:1px solid #00d1b2;
+	border-radius:5px;
+	
+}
+
+.card{
+	box-shadow:0px 2px 8px rgba(0,0,0,0.18);
+	border-radius:3px;
+	
+}
+
+#app{
+	
+	background: url('/images/bg1.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+.text-center{
+	display:flex;
+	justify-content: center;
+	text-transform: uppercase;
+	width:250px;
+
+}
+
+.error-span{
+	color:red;
+	font-size:0.8em;
+}
+
+.modal-box{
+	padding:50px;
+	background:red;
+	
+}
