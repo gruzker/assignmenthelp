@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,700);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons);@charset "UTF-8";
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -11665,7 +11665,7 @@ a.navbar-item.is-active,
 }
 
 .navbar {
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -11675,6 +11675,11 @@ a.navbar-item.is-active,
 
 .label {
   color: #717171;
+}
+
+.navbar-brand {
+  height: 0;
+  font-family: 'Rubik', sans-serif;
 }
 
 .m-t-5 {
@@ -12177,10 +12182,8 @@ a.navbar-item.is-active,
 
 .logo-text {
   font-size: 2em;
-  color: #6ea8bf;
+  color: #FF99AC;
   font-weight: 900;
-  margin-left: -30px;
-  padding-top: 15px;
 }
 
 .hero {
@@ -12238,5 +12241,62 @@ a.navbar-item.is-active,
 .modal-box {
   padding: 50px;
   background: red;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0);
+  margin-right: 20px;
+  background-color: white;
+}
+
+.forgot-pass {
+  font-size: 0.8em;
+  color: #a2a2a2;
+}
+
+.alert-success {
+  color: #00d1b2;
+}
+
+.is-primary {
+  background-color: #FF9A8B;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF9A8B), color-stop(55%, #FF6A88), to(#FF99AC));
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+  background-color: #cc40a1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f79081), color-stop(55%, #f75e7c), to(#f9859b));
+  background-image: linear-gradient(90deg, #f79081 0%, #f75e7c 55%, #f9859b 100%);
+}
+
+.button.register-btn {
+  color: #FF99AC;
+  background: white;
+  border: 1px solid #FF99AC;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.navMenuMobile {
+  padding-top: 50px;
 }
 

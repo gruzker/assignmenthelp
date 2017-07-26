@@ -792,7 +792,9 @@ __webpack_require__(10);
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#app',
-  data: {}
+  data: {
+    isMenuActive: false
+  }
 });
 
 /***/ }),

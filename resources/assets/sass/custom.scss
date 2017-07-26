@@ -26,10 +26,10 @@ body{
 
 .logo-text{
 	font-size: 2em;
-    color: #6ea8bf;
+    color: #FF99AC;
     font-weight: 900;
-    margin-left: -30px;
-    padding-top: 15px;
+    // margin-left: -30px;
+    // padding-top: 15px;
 }
 
 .hero{
@@ -80,5 +80,55 @@ body{
 .modal-box{
 	padding:50px;
 	background:red;
-	
+
+}
+
+.register{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top:50px;
+	background:rgba(255, 255, 255, 0);
+	margin-right:20px;
+	background-color:white;
+}
+
+.forgot-pass{
+	font-size: 0.8em;
+    color: #a2a2a2;
+}
+
+.alert-success{
+	color:#00d1b2;
+}
+
+.is-primary{
+	background-color: #FF9A8B;
+	background-image: -webkit-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+	background-image: -moz-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+	background-image: -o-linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+	background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+}
+
+.button.is-primary:hover, .button.is-primary.is-hovered {
+    background-color: #cc40a1;
+    background-image: linear-gradient(90deg, #f79081 0%, #f75e7c 55%, #f9859b 100%);
+}
+
+.button.register-btn{
+	color: #FF99AC;
+    background: white;
+    border: 1px solid #FF99AC;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif; 
+	text-align: center;
+
+}
+
+.navMenuMobile{
+	padding-top:50px;
 }

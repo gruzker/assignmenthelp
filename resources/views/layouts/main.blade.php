@@ -13,7 +13,8 @@
 	@include('partials.styles')
 </head>
 <body>
-	<div id="app" v-cloak>
+	<div class="container">
+		<div id="app" v-cloak>
 		@include('partials.message')
 		@include('partials.navbar')
 
@@ -21,6 +22,8 @@
 
 		
 	</div>
+	</div>
+	
 	@include('partials.scripts')
 </body>
 </html>

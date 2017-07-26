@@ -2,30 +2,19 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ route('index') }}">
       {{-- <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> --}}
-      <img class="logo-img" src="/images/logo3.gif" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-      <span class="logo-text is-hidden-mobile">AssignmentHelp</span>
-    </a>
+      {{-- <img class="" src="/images/new.gif" alt="Bulma: a modern CSS framework based on Flexbox"> --}}
+      {{-- <img class="logo-img" src="/images/logo3.gif" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> --}}
+      <span class="logo-text">AssignmentHelp</span>
+    </a>    
 
-    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
-      <span class="icon" style="color: #333;">
-        <i class="fa fa-github"></i>
-      </span>
-    </a>
-
-    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-      <span class="icon" style="color: #55acee;">
-        <i class="fa fa-twitter"></i>
-      </span>
-    </a>
-
-    <div class="navbar-burger burger" data-target="navMenuExample">
+    <div class="navbar-burger burger" data-target="navMenuExample" v-bind:class="{ 'is-active': isMenuActive }" @click="isMenuActive=!isMenuActive">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div id="navMenuExample" class="navbar-menu"> 
+  <div id="navMenuExample" class="navbar-menu" v-bind:class="{ 'is-active navMenuMobile': isMenuActive }"> 
     <div class="navbar-end">
       <a class="navbar-item" href="{{ route('index') }}">
         Home
@@ -49,7 +38,7 @@
             </a>
           </p>
           <p class="control">
-            <a class="button is-primary" href="{{ route('register') }}">              
+            <a class="button is-primary register-btn" href="{{ route('register') }}">              
               <span>Become a Tutor</span>
               <span class="icon">
                 <i class="fa fa-user-plus" aria-hidden="true"></i>
